@@ -1,0 +1,76 @@
+header {
+    background: #fc9003;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+}
+
+aside{
+    float: left;
+    text-align: center;
+    width: 200px;
+}
+
+h1{
+    font-family: sans-serif;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pageTitle{
+    background: #e8e8e8;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.form{
+    width: 800px;
+    margin: auto;
+    
+}
+
+.formPart{
+    padding: 10px 20% 200px 20%;
+    background: #ffefd1;
+}
+
+button{
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    display: inline-block;
+}
+
+td{
+    padding: 10px;
+}
+
+a:hover{
+    color: yellow;
+}
+
+
+
+
