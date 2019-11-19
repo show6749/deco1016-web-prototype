@@ -1,26 +1,60 @@
-header {
+.container{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 100px 50px 1fr 100px;
+    grid-template-areas: "header header header header nav nav"
+                         "pageTitle pageTitle pageTitle pageTitle pageTitle pageTitle"
+                         "main main main main main main"
+                         "footer footer footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
     background: #fc9003;
     padding: 20px;
     position: sticky;
     top: 0;
+    font-size: 60px;
 }
 
-nav{
+.nav{
+    grid-area: nav;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
-    width: 100%;
-    display: inline-block;
+    justify-self: stretch;
+    background: #ffbb4d;
+    position: sticky;
+    top: 0;
+}
+
+.main{
+    grid-area: main;
+    margin: 0px 50px 0px 50px;
+    padding: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    background: #fc9003;
 }
 
 aside{
     float: left;
+    font:  30px sans-serif;
     text-align: center;
     width: 200px;
+    position: sticky;
+    top: 150px;
 }
 
 h1{
     font-family: sans-serif;
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
 }
 
 input{
@@ -35,10 +69,19 @@ label{
 }
 
 .pageTitle{
+    grid-area: pageTitle;
     background: #e8e8e8;
     padding: 10px;
     font-family: sans-serif;
     font-size: 30px;
+    padding-left: 50px;
+    position: sticky;
+    top: 100px;
+}
+
+.pageText{
+    font-family: sans-serif;
+    font-size: 25px;
 }
 
 .form{
@@ -60,17 +103,26 @@ button{
 }
 
 table{
-    display: inline-block;
+    margin: auto;
+    margin-top: 40px;
 }
 
 td{
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
 }
 
 a:hover{
     color: yellow;
 }
 
+.anchor {
+    position: relative;
+    top: -220px;
+    visibility: hidden;
+}
 
-
-
+.leftWrap{
+    float: left;
+    margin: 0px 100px 0px 60px;
+}

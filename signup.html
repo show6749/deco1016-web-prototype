@@ -9,95 +9,104 @@
     </head>
 
     <body>
-        <header>
-            Woolworths Rewards
-            <nav>
+        <div class="container">
+            <div class="header">
+                Woolworths Rewards
+            </div>
+            <div class="nav">
                 <table>
                     <tr>
                         <td><a href="index.html">Home</a></td>
                         <td><a href="signup.html">Join</a></td>
                     </tr>
                 </table>
-            </nav>
-        </header>
-        <div class= "pageTitle">
-            Sign Up Form
-        </div>
-         <aside>
-            <br>
-            <p><a href="#createAccount">1</a></p>
-            <p><a href="#Verify">2</a></p>
-            <p><a href="#orderCard">3</a></p>
-        </aside>
-        <div class="form">
-            <h1 id="createAccount">1. Create Account</h1>
-            <div class="formPart">
-            <form id="form">
-                <label for="firstName">First Name: </label>
-                <input type="text" name="firstName" placeholder="John"></input>
-                <br>
-                <label for="lastName">Last Name: </label>
-                <input type="text" name="lastName" placeholder="Doe"></input>
-                <br>
-                <label for="mobile">Mobile: </label>
-                <input type="number" name="mobile" placeholder="04XX XXX XXX"></input>
-                <br>
-                <label for="email">Email: </label>
-                <input type="email" name="email" placeholder="johndoe@email.com"></input>
-                <br>
-                <label for="birthday">Date of Birth: </label>
-                <input type="date" name="birthday"></input>
-                <br>
-                <label for="gender">Gender: </label><br>
-                <input type="radio" name="gender">Male</input><br>
-                <input type="radio" name="gender">Female</input><br>
-                <input type="radio" name="gender">Non-binary</input><br>
-                <input type="radio" name="gender">Prefer Not to Say</input><br>
-                
             </div>
-        <h1 id="Verify">2. Verify</h1>
-        <div class="formPart">
-                <label for="verify">Verify Code: </label>
-                <input type="password" name="verify" placeholder="Verify Code"></input>
-                <br>
-                <label for="password">Password: </label>
-                <input type="password" name="password" placeholder="Password"></input>
-                <br>
-                <label for="confirmPassword">Confirm Password: </label>
-                <input type="password" name="confirmPassword" placeholder="Confirm Password"></input>
-        </div>
-        <h1 id="orderCard">3. Order Card</h1>
-        <div class="formPart">
-                <label for="cardNumber">Temporary Card Number: </label>
-                <input type="number" name="cardNumber" placeholder="Card Number"></input>
-                <br>
-                <label for="streetAddress">Address: </label>
-                <input type="text" name="streetAddress" placeholder="10 Location Street"></input>
-                <br>
-                <label for="state">State/Territory: </label>
-                <select name="state">
-                    <option>NSW</option>
-                    <option>ACT</option>
-                    <option>QLD</option>
-                    <option>WA</option>
-                    <option>VIC</option>
-                    <option>NT</option>
-                    <option>TAS</option>
-                </select>
-                <br>
-                <label for="postcode">Post Code:</label>
-                <input type="number" name="postcode" placeholder="0000"></input>
-                <br>
+            <div class= "pageTitle">
+                Sign Up Form
             </div>
-                <button type="reset">Reset</button><button name="submission">Submit</button>
-            
-            </form>
-        
-            <h2> Thank you for joining Woolworths Rewards! </h2>
+            <div class="main">
+                <aside>
+                    <br>
+                    <p style="background: #fc9003; border-radius: 100px;"><br><a href="#createAccount">1</a><br><br></p>
+                    <p style="background: #fc9003; border-radius: 100px;"><br><a href="#2verify">2</a><br><br></p>
+                    <p style="background: #fc9003; border-radius: 100px;"><br><a href="#orderCard">3</a><br><br></p><br>
+                </aside>
+                <div class="form">
+                    <h1>1. Create Account</h1><a name="createAccount" class="anchor">anchor text [invisible]</a>
+                    <div class="formPart">
+                        <form id="form">
+                            <label for="firstName">First Name: </label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John"></input>
+                            <br>
+                            <label for="lastName">Last Name: </label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe"></input>
+                            <br>
+                            <label for="mobile">Mobile: </label>
+                            <input type="number" id="mobile" name="mobile" placeholder="04XX XXX XXX"></input>
+                            <br>
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="johndoe@email.com"></input>
+                            <br>
+                            <label for="birthday">Date of Birth: </label>
+                            <input type="date" id="birthday" name="birthday"></input>
+                            <br>
+                            <label for="gender">Gender: </label><br>
+                            <input type="radio" id="gender" name="gender">Male</input><br>
+                            <input type="radio" id="gender" name="gender">Female</input><br>
+                            <input type="radio" id="gender" name="gender">Non-binary</input><br>
+                            <input type="radio" id="gender" name="gender">Prefer Not to Say</input><br>
+                    </div>
+                    <h1>2. Verify</h1><a name="2verify" class="anchor">anchor text [invisible]</a>
+                    <div class="formPart">
+                            <label for="verify">Verify Code: </label>
+                            <input type="password" name="verify" placeholder="Verify Code"></input>
+                            <br>
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password" placeholder="Password"></input>
+                            <br>
+                            <label for="confirmPassword">Confirm Password: </label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"></input>
+                    </div>
+                    <h1>3. Order Card</h1><a name="orderCard" class="anchor">anchor text [invisible]</a>
+                    <div class="formPart">
+                            <label for="cardNumber">Temporary Card Number: </label>
+                            <input type="number" id="cardNumber" name="cardNumber" placeholder="Card Number"></input>
+                            <br>
+                            <label for="streetAddress">Address: </label>
+                            <input type="text" id="streetAddress" name="streetAddress" placeholder="10 Location Street"></input>
+                            <br>
+                            <label for="state">State/Territory: </label>
+                            <select id="state" name="state">
+                                <option>NSW</option>
+                                <option>ACT</option>
+                                <option>QLD</option>
+                                <option>WA</option>
+                                <option>VIC</option>
+                                <option>NT</option>
+                                <option>TAS</option>
+                            </select>
+                            <br>
+                            <label for="postcode">Post Code:</label>
+                            <input type="number" id="postcode" name="postcode" placeholder="0000"></input>
+                            <br>
+                    </div>
+                            <p class="errors"></p>
+                            <button type="reset">Reset</button><button name="submission">Submit</button>
+                        </form>
+                    <h2> Thank you for joining Woolworths Rewards! <a href="memberhome.html">Test</a></h2>
+                </div>
+            </div>
+            <div class="footer">
+                <table>
+                    <tr>
+                        <td><a href="https://www.woolworthsrewards.com.au/how-it-works.html">Rewards Explained</a></td>
+                        <td><a href="https://www.woolworthsrewards.com.au/terms.html">Terms and Conditions</a></td>
+                        <td><a href="https://www.woolworthsrewards.com.au/support.html">Help and FAQs</a></td>
+                        <td><a href="https://www.woolworthsrewards.com.au/contact.html">Contact Us</a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <footer>
-
-        </footer>
     </body>
 </html>
 
