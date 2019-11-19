@@ -7,7 +7,9 @@
                          "main main main main main main"
                          "footer footer footer footer footer footer";
 }
+/*define grid layout for othe elements*/
 
+/*below are css styles for individual elements and classes, no particular order*/
 .header {
     grid-area: header;
     background: #fc9003;
@@ -138,7 +140,7 @@ iframe{
     height: 600px;
 }
 
-
+/*attempted media query to adjust web page for mobile*/
 @media only screen and (max-width: 426px) {
     .container{
         display: grid;

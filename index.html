@@ -12,11 +12,12 @@
     <body>
         <!--define grid container-->
         <div class="container">
-            <!--header, the top bar and navigation that recurs accross all pages-->
+            <!--header, the top bar and navigation that recurs accross all pages (with sticky css)-->
             <div class="header">
                 Woolworths Rewards
             </div>
             <div class="nav">
+                <!--table for navigation links-->
                 <table>
                     <tr>
                         <td><a href="index.html">Home</a></td>
@@ -24,16 +25,21 @@
                     </tr>
                 </table>
             </div>
-            <!--sub header, lets user see which page they are on-->
+            <!--sub header, lets user see which page they are on (with sticky css)-->
             <div class= "pageTitle">
                 Welcome to Woolworths Rewards
             </div>
+            <!--main holds each pages content-->
             <div class="main">
+                <!--opening images, include width css and a class to wrap text around-->
                 <p><img src="homePage.jpg" width="400px" class="leftWrap"></img><img src="rewardsCard.jpeg" width = "600px"></img></p>
+                <!--css class to make all regular text on the pages look the same-->
                 <p class="pageText">With a Woolworths Rewards Card, you'll earn 1 point on every dollar* you spend to get $10 off a future shop.</p>
                 <br>
+                <!--table to display the benefits of joining-->
                 <table style="text-align: center;">
                     <tr>
+                        <!--table data with styling to individualise the benefits-->
                         <td style="border-right: dotted; padding: 20px;"><img src="fuel.png" width=80px><br>Fuel Discounts</td>
                         <td style="border-right: dotted; padding: 20px;"><img src="memberOnly.png" width=80px><br>Member-Only<br>Deals</td>
                         <td style="border-right: dotted; padding: 20px;"><img src="convert.png" width=80px><br>Convert Savings</td>
@@ -41,9 +47,11 @@
                     </tr>
                 </table>
                 <br>
+                <!--second link (outside navigation) to encourage user join-->
                 <p class="pageText" style="text-align: center;"><a href="signup.html">Join now to start saving!</a></p>
                 <br>
             </div>
+            <!--footer with links to actual sites for more content-->
             <div class="footer">
                 <table>
                     <tr>

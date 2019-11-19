@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="icon" href="icon.png">
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <!--link stylesheets, and define title with icon-->
     </head>
 
     <body>
@@ -25,16 +26,20 @@
                 Sign Up Form
             </div>
             <div class="main">
+                <!--sticky aside for easy navigation between sections of the sign up form (with sticky css)-->
                 <aside>
                     <br>
                     <p style="background: #fc9003; border-radius: 100px;"><br><a href="#createAccount">1</a><br><br></p>
                     <p style="background: #fc9003; border-radius: 100px;"><br><a href="#2verify">2</a><br><br></p>
                     <p style="background: #fc9003; border-radius: 100px;"><br><a href="#orderCard">3</a><br><br></p><br>
                 </aside>
+                <!--beginning of form that will span over multiple divs-->
                 <div class="form">
+                    <!--first title with place holder anchor for the aside navigation-->
                     <h1>1. Create Account</h1><a name="createAccount" class="anchor">anchor text [invisible]</a>
                     <div class="formPart">
                         <form id="form" class="form">
+                            <!--first section for personal details, all feilds have place holders and names-->
                             <label for="firstName">First Name: </label>
                             <input type="text" id="firstName" name="firstName" placeholder="John"></input>
                             <br>
@@ -56,6 +61,7 @@
                             <input type="radio" id="gender" name="gender">Non-binary</input><br>
                             <input type="radio" id="gender" name="gender">Prefer Not to Say</input><br>
                     </div>
+                    <!--second section to confirm account (not fuctional and can be filled with anything)-->
                     <h1>2. Verify</h1><a name="2verify" class="anchor">anchor text [invisible]</a>
                     <div class="formPart">
                             <label for="verify">Verify Code: </label>
@@ -67,6 +73,7 @@
                             <label for="confirmPassword">Confirm Password: </label>
                             <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"></input>
                     </div>
+                    <!--final section to order Woolworths Rewards Card that the user will then take in store-->
                     <h1>3. Order Card</h1><a name="orderCard" class="anchor">anchor text [invisible]</a>
                     <div class="formPart">
                             <label for="cardNumber">Temporary Card Number: </label>
@@ -90,10 +97,12 @@
                             <input type="number" id="postcode" name="postcode" placeholder="0000"></input>
                             <br>
                     </div>
+                            <!--paragraph to be filled and display errors but unfortunately doesn't work-->
                             <p class="errors"></p>
+                            <!--buttons to restart form and submit said form-->
                             <button type="reset">Reset</button><button name="submission">Submit</button>
                         </form>
-                    <h2> Thank you for joining Woolworths Rewards!<!--  <a href="memberhome.html">To Member Only Pages</a></h2> -->
+                    <h2> Thank you for joining Woolworths Rewards!
                 </div>
             </div>
             <div class="footer">
@@ -107,6 +116,7 @@
                 </table>
             </div>
         </div>
+        <!--javascript attempt-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
         <script src="script.js"></script>
     </body>

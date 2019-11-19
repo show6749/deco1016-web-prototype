@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="icon" href="icon.png">
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <!--link stylesheets, and define title with icon-->
     </head>
 
     <body onload="fillDetails()">
@@ -28,8 +29,10 @@
             </div>
             <div class="main">
                 <h2>Account Details</h2>
+                <!--image to brighten dull page and cover empty space-->
                 <img src="fruit.jpg" style="width: 500px; float: right;"></img>
-                <p class="pageText">Account Name: <span id="FirstName"></span> <span id="LastName"></span> <button>Edit</button></p>
+                <!--titles followed by user data-->
+                <p class="pageText">Account Name: <span id="FirstName"></span> <span id="LastName"></span> <button>Edit</button></p><!--edit buttons not functional-->
                 <p class="pageText">Mobile: <span id="Mobile"></span> <button>Edit</button></p>
                 <p class="pageText">Email: <span id="Email"></span> <button>Edit</button></p>
                 <p class="pageText">Birthday: <span id="Birthday"></span> <button>Edit</button></p>
@@ -50,6 +53,7 @@
         </div>
         <script>
             function fillDetails(){
+                //java script that retrieves user's input from the form and displays it for the user to see
                 var tfname = document.getElementById("TitleFirstName");
                 let tfnameValue = localStorage.getItem(0);
                 tfname.innerHTML= tfnameValue;

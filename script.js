@@ -1,4 +1,4 @@
-//contraints
+// attempted form contraints
 var constraints = {
     firstName: {
       presence: true,
@@ -39,7 +39,7 @@ var constraints = {
     }
 }
 
-
+//attmepted form validation
 var form = document.querySelector(".form");
   form.addEventListener("submit", function(ev) {
     ev.preventDefault();
@@ -74,6 +74,7 @@ function showSuccess() {
     window.location.href = "memberhome.html";
 }
 
+//function to place form entries into local storage with number keys
 function updateLocalStorage(){
     localStorage.clear();
     localStorage.setItem("0", document.getElementById("firstName").value);

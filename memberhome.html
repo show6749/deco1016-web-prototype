@@ -6,8 +6,9 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="icon" href="icon.png">
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <!--link stylesheets, and define title with icon-->
     </head>
-
+    <!--fill page title with the name the user input-->
     <body onload="fillFirstName()">
         <div class="container">
             <div class="header">
@@ -24,11 +25,11 @@
                 </table>
             </div>
             <div class= "pageTitle">
-                Welcome back <span id="welcomeName"></span>! 
+                Welcome back <span id="welcomeName"></span>! <!--span to insert user's name-->
             </div>
             <div class="main">
                 <h2>Your Points = ****</h2>
-                <h3>Newest Deals</h3>
+                <h3>Newest Deals</h3><!--basic welcome page content-->
                 <p class="pageText">Christmas Specials!</p>
                 <img src="christmas.jpg" width="900px"></img>
             </div>
@@ -44,6 +45,7 @@
             </div>
         </div>
         <script>
+            //retrieves user's name from local storage and places it the page title span
             function fillFirstName(){
                 var name = document.getElementById("welcomeName");
                 let value = localStorage.getItem(0);
