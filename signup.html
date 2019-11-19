@@ -5,7 +5,7 @@
         <title>Sign Up</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="icon" href="icon.png">
-        <script src="script.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     </head>
 
     <body>
@@ -34,7 +34,7 @@
                 <div class="form">
                     <h1>1. Create Account</h1><a name="createAccount" class="anchor">anchor text [invisible]</a>
                     <div class="formPart">
-                        <form id="form">
+                        <form id="form" class="form">
                             <label for="firstName">First Name: </label>
                             <input type="text" id="firstName" name="firstName" placeholder="John"></input>
                             <br>
@@ -93,7 +93,7 @@
                             <p class="errors"></p>
                             <button type="reset">Reset</button><button name="submission">Submit</button>
                         </form>
-                    <h2> Thank you for joining Woolworths Rewards! <a href="memberhome.html">Test</a></h2>
+                    <h2> Thank you for joining Woolworths Rewards!<!--  <a href="memberhome.html">To Member Only Pages</a></h2> -->
                 </div>
             </div>
             <div class="footer">
@@ -107,6 +107,8 @@
                 </table>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
 

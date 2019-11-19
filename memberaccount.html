@@ -2,12 +2,13 @@
 
 <html>
     <head>
-        <title>Landing Page</title>
+        <title>Member Account</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="icon" href="icon.png">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     </head>
 
-    <body>
+    <body onload="fillDetails()">
         <div class="container">
             <div class="header">
                 Woolworths Rewards
@@ -23,16 +24,16 @@
                 </table>
             </div>
             <div class= "pageTitle">
-                ____'s Account
+                <span id="TitleFirstName"></span>'s Account
             </div>
             <div class="main">
                 <h2>Account Details</h2>
-                <p class="pageText">Account Name: <button>Edit</button></p>
-                <p class="pageText">Mobile: <button>Edit</button></p>
-                <p class="pageText">Email: <button>Edit</button></p>
-                <p class="pageText">Gender: <button>Edit</button></p>
-                <p class="pageText">Card Number: <button>Cancel</button></p>
-                <p class="pageText">Address: <button>Edit</button></p>
+                <p class="pageText">Account Name: <span id="FirstName"></span> <span id="LastName"></span> <button>Edit</button></p>
+                <p class="pageText">Mobile: <span id="Mobile"></span> <button>Edit</button></p>
+                <p class="pageText">Email: <span id="Email"></span> <button>Edit</button></p>
+                <p class="pageText">Birthday: <span id="Birthday"></span> <button>Edit</button></p>
+                <p class="pageText">Card Number: <span id="CardNumber"></span> <button>Cancel</button></p>
+                <p class="pageText">Address: <span id="Location"></span> <span id="State"></span> <span id="Postcode"></span> <button>Edit</button></p>
                 <p class="pageText"><a href="index.html">Log Out</a></p>
             </div>
             <div class="footer">
@@ -46,5 +47,39 @@
                 </table>
             </div>
         </div>
+        <script>
+            function fillDetails(){
+                var tfname = document.getElementById("TitleFirstName");
+                let tfnameValue = localStorage.getItem(0);
+                tfname.innerHTML= tfnameValue;
+                var fname = document.getElementById("FirstName");
+                let fnameValue = localStorage.getItem(0);
+                fname.innerHTML= fnameValue;
+                var lname = document.getElementById("LastName");
+                let lnameValue = localStorage.getItem(1);
+                lname.innerHTML= lnameValue;
+                var mob = document.getElementById("Mobile");
+                let mobValue = localStorage.getItem(2);
+                mob.innerHTML= mobValue;
+                var email = document.getElementById("Email");
+                let emailValue = localStorage.getItem(3);
+                email.innerHTML= emailValue;
+                var bday = document.getElementById("Birthday");
+                let bdayValue = localStorage.getItem(4);
+                bday.innerHTML= bdayValue;
+                var cardN = document.getElementById("CardNumber");
+                let cardNValue = localStorage.getItem(5);
+                cardN.innerHTML= cardNValue;
+                var location = document.getElementById("Location");
+                let locationValue = localStorage.getItem(6);
+                location.innerHTML= locationValue;
+                var state = document.getElementById("State");
+                let stateValue = localStorage.getItem(7);
+                state.innerHTML= stateValue;
+                var pcode = document.getElementById("Postcode");
+                let pcodeValue = localStorage.getItem(8);
+                pcode.innerHTML= pcodeValue;
+            }
+        </script>
     </body>
 </html>

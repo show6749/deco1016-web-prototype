@@ -2,12 +2,13 @@
 
 <html>
     <head>
-        <title>Landing Page</title>
+        <title>Member Home</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="icon" href="icon.png">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     </head>
 
-    <body>
+    <body onload="fillFirstName()">
         <div class="container">
             <div class="header">
                 Woolworths Rewards
@@ -23,10 +24,13 @@
                 </table>
             </div>
             <div class= "pageTitle">
-                Welcome back ___!
+                Welcome back <span id="welcomeName"></span>! 
             </div>
             <div class="main">
-                Home Page
+                <h2>Your Points = ****</h2>
+                <h3>Newest Deals</h3>
+                <p class="pageText">Christmas Specials!</p>
+                <img src="christmas.jpg" width="900px"></img>
             </div>
             <div class="footer">
                 <table>
@@ -39,5 +43,12 @@
                 </table>
             </div>
         </div>
+        <script>
+            function fillFirstName(){
+                var name = document.getElementById("welcomeName");
+                let value = localStorage.getItem(0);
+                name.innerHTML= value;
+            }
+        </script>
     </body>
 </html>
